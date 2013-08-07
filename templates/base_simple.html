@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block head_title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    {% block base_javascript %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    {% endblock %}
+
+    {% block base_css %}
+
+    {% endblock %}
+
+</head>
+<body>
+
+{% block header %} {% endblock %}
+
+<div id="container"> 
+    {% block content %} {% endblock %}
+</div>
+
+{% block footer %} {% endblock %}
+
+</body>
+</html>

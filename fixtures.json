@@ -1,0 +1,67 @@
+[
+  {
+    "model": "basket.Article",
+    "pk": 1,
+    "fields": {
+      "name": "Article 1",
+      "code": "0000001",
+      "price": 10,
+      "currency": "uah",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis augue eu tellus bibendum semper et nec lacus. Curabitur vehicula, sem id condimentum porta, orci odio congue magna, mattis convallis odio leo malesuada nunc. Sed ultrices leo in arcu varius, vel ultrices massa consectetur.",
+      "created_at": "2013-08-06 10:01:23",
+      "updated_at": "2013-08-06 10:01:23"
+    }
+  },
+  {
+    "model": "basket.Article",
+    "pk": 2,
+    "fields": {
+      "name": "Article 2",
+      "code": "0000002",
+      "price": 20,
+      "currency": "uah",
+      "description": "Ut sed libero eget erat pharetra rhoncus in sit amet urna. Ut a ullamcorper erat. Donec vitae rhoncus tortor. Aenean lacinia aliquet elit et interdum. Cras et adipiscing velit, id condimentum quam. Maecenas pretium molestie diam, vitae cursus tortor accumsan a. Aenean ac sapien nunc. ",
+      "created_at": "2013-08-06 10:01:23",
+      "updated_at": "2013-08-06 10:01:23"
+    }
+  },
+  {
+    "model": "basket.Article",
+    "pk": 3,
+    "fields": {
+      "name": "Article 3",
+      "code": "0000003",
+      "price": 30,
+      "currency": "uah",
+      "description": "Integer hendrerit, lorem eu adipiscing scelerisque, nisl risus fermentum arcu, non gravida leo dolor a dolor. Quisque auctor convallis quam eget ullamcorper. Vestibulum viverra erat id leo mattis dictum. Vivamus aliquet egestas arcu eu rutrum. Nunc malesuada quam mi, vitae fermentum ante tristique vel. Morbi egestas euismod lacus, eu dictum augue luctus ut. Curabitur justo libero, vehicula placerat mattis non, aliquet a metus. Curabitur eu mauris mollis, vehicula turpis euismod, sodales felis. Aenean in velit et magna ullamcorper pharetra a eu eros. Praesent sagittis urna et orci lacinia, sed tempor quam elementum. In id cursus turpis. Aenean aliquet lacus ac tempus porttitor. Sed luctus metus ut elit pharetra pharetra.",
+      "created_at": "2013-08-06 10:01:23",
+      "updated_at": "2013-08-06 10:01:23"
+    }
+  },
+  {
+    "model": "basket.Article",
+    "pk": 4,
+    "fields": {
+      "name": "Article 4",
+      "code": "0000004",
+      "price": 40,
+      "currency": "uah",
+      "description": "In vulputate mauris at lobortis venenatis. Donec id accumsan tortor. Quisque tempor dignissim nisl nec sollicitudin. Etiam faucibus sem massa, ac molestie magna interdum eu. Suspendisse aliquet, turpis sed vulputate pharetra, enim odio accumsan quam, pulvinar ultrices tellus nibh ut lectus.",
+      "created_at": "2013-08-06 10:01:23",
+      "updated_at": "2013-08-06 10:01:23"
+    }
+  },
+  {
+    "model": "basket.Article",
+    "pk": 5,
+    "fields": {
+      "name": "Article 5",
+      "code": "0000005",
+      "price": 50,
+      "currency": "uah",
+      "description": "Sed commodo mi facilisis ante volutpat luctus. Suspendisse ac felis orci. Vestibulum ornare odio nisl, id lobortis tellus convallis in. Aenean tempus eleifend ornare. Donec ultricies velit non commodo tempus. Suspendisse potenti. Donec aliquet ipsum lacus. Aliquam aliquam nec nisl porta venenatis. Fusce porta enim nec sem blandit vestibulum.",
+      "created_at": "2013-08-06 10:01:23",
+      "updated_at": "2013-08-06 10:01:23"
+    }
+  }
+]

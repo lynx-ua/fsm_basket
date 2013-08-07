@@ -1,0 +1,50 @@
+{% extends "base_simple.html" %}
+
+{% block head_title %}FSM{% endblock %}
+
+{% block content  %}
+    {% if messages %}
+        {% for message in messages %}
+            <div class='message'>{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+
+    <div class='basket'>
+        <h1>Basket:</h1>
+        <div><strong>Status:</strong> {{ basket.state }}</div>
+        {% if basket.expire_at %}
+            <div><strong>Expire At:</strong> {{ basket.expire_at }}</div>
+        {% endif %}
+        {% if basket.pk and basket.articles.exists %}
+            <div><strong>Total cost:</strong> {{ basket.total_cost }}</div>
+            {% for a in basket.articles.all %}
+                <div class='article' style='margin: 20px 0;'>
+                    <div><strong>{{ a.article.name }}</strong></div>
+                    <div>Code: {{ a.article.code }}</div>
+                    <div>Price: {{ a.article.price }}</div>
+                    <div><a href='{% url 'delete-from-basket' a.article.code %}'>Delete from basket</a>
+                </div>
+            {% endfor %}
+            {% if basket.articles.exists %}
+                <div><a href='{% url 'clean-basket' %}'>Clean basket</a></div>
+            {% endif %}
+        {% endif %}
+        <hr/>
+    </div>
+
+    <div class='articles'>
+        <h1>Articles: </h1>
+        {% for article in articles %}
+            <div class='article' style='margin: 20px 0;'>
+                <div><strong>{{ article.name }}</strong></div>
+                <div>Code: {{ article.code }}</div>
+                <div>Price: {{ article.price }}</div>
+                <div>Description: {{ article.description }}</div>
+                <div><a href='{% url 'add-to-basket' article.code %}'>Add to basket</a></div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}
